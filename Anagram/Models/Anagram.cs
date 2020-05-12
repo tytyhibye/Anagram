@@ -36,6 +36,7 @@ namespace Anagramatron.Models
           Array.Sort(inputArray);
           string newInput = string.Join("", inputArray);
           char[] checkArray = word.ToCharArray();
+          Array.Sort(checkArray);
           string result = string.Join("", checkArray);
           if (newInput != result)
             {
